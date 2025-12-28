@@ -17,17 +17,17 @@
             :src="logoImage"
             alt="Kleinlaut"
           />
-          <p class="mt-1 font-body text-xs leading-snug text-accent animate-fade-rise sm:mt-2 sm:text-sm">
+          <p class="mt-4 font-body text-[0.9rem] leading-snug text-accent animate-fade-rise sm:mt-2 sm:text-sm">
             Dienstag bis Samstag<br />18:00 - 02:00
           </p>
         </div>
         <p
-          class="mb-6 max-w-xs self-center text-center text-[0.72rem] leading-snug text-accent animate-fade-in sm:mb-10 sm:text-xs mx-auto"
+          class="mb-8 max-w-sm self-center text-center text-[0.9rem] leading-snug text-accent animate-fade-in sm:mb-10 sm:text-base mx-auto"
         >
           Bei Fragen melde dich gerne per
           <a class="underline underline-offset-2" href="tel:+436766616644">Anruf</a>,
           <a class="underline underline-offset-2" href="https://wa.me/436766616644">WhatsApp</a>,
-          slide in unsere
+          slide <br>in unsere
           <a
             class="underline underline-offset-2"
             href="https://www.instagram.com/kleinlaut1070/"
