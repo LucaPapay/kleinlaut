@@ -29,6 +29,21 @@
   }
 }
 
+@layer utilities {
+  .hero-background {
+    background-image: url("./assets/images/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: 1024px) {
+    .hero-background {
+      background-image: url("./assets/images/hero_desktop.jpg");
+    }
+  }
+}
+
 body.allow-scroll {
   overflow: auto;
 }

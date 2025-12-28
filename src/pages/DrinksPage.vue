@@ -1,16 +1,9 @@
 <template>
-  <section class="h-[100dvh] overflow-hidden">
+  <section class="relative h-[100lvh] min-h-[100vh] overflow-hidden">
     <TopBar />
-      <div class="relative h-[calc(100dvh-48px)]">
-      <picture>
-        <source :srcset="heroDesktopImage" media="(min-width: 1024px)" />
-        <img
-          class="absolute inset-0 h-full w-full object-cover"
-          :src="heroImage"
-          alt="Cocktail in a dimly lit bar"
-        />
-      </picture>
-      <div class="relative grid h-full grid-rows-[1fr_auto] px-6 text-center">
+    <div class="absolute inset-0 hero-background" aria-hidden="true"></div>
+    <div class="relative h-[calc(100dvh-48px)]">
+      <div class="relative z-10 grid h-full grid-rows-[1fr_auto] px-6 text-center">
         <div class="flex flex-col items-center justify-center">
           <img
             class="w-48 max-w-[70%] animate-fade-rise drop-shadow-lg sm:w-56"
@@ -46,7 +39,5 @@
 
 <script setup>
 import TopBar from '../components/TopBar.vue'
-import heroImage from '@/assets/images/hero.jpg'
-import heroDesktopImage from '@/assets/images/hero_desktop.jpg'
 import logoImage from '@/assets/images/logo.png'
 </script>
