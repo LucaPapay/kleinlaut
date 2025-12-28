@@ -2,10 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Local fonts: drop files in /public/fonts and define @font-face here. */
+/* Local fonts: drop files in /src/assets/fonts or /public/fonts and define @font-face here. */
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("./assets/fonts/Proxima Nova Black.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
 
 @layer base {
   body {
     @apply bg-black text-white font-body font-medium;
+  }
+
+  .font-display {
+    font-weight: 800;
+  }
+
+  .font-body {
+    font-weight: 500;
   }
 }

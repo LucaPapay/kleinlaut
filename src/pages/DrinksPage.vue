@@ -21,9 +21,21 @@
             Dienstag bis Samstag<br />18:00 - 02:00
           </p>
         </div>
-        <p class="mb-10 max-w-xs self-center text-xs text-yellow-100/90 animate-fade-in">
-          Bei Fragen melde dich gerne per Anruf, WhatsApp, slide in unsere DMs oder
-          schreibe uns eine Mail :)
+        <p class="mb-10 max-w-xs self-center text-xs text-accent animate-fade-in">
+          Bei Fragen melde dich gerne per
+          <a class="underline underline-offset-2" href="tel:+436766616644">Anruf</a>,
+          <a class="underline underline-offset-2" href="https://wa.me/436766616644">WhatsApp</a>,
+          slide in unsere
+          <a
+            class="underline underline-offset-2"
+            href="https://www.instagram.com/kleinlaut1070/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            DMs
+          </a>
+          oder schreibe uns eine
+          <a class="underline underline-offset-2" href="mailto:peter@kleinlaut.wien">Mail</a> :)
         </p>
       </div>
     </div>

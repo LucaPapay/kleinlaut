@@ -1,7 +1,5 @@
 <template>
-  <header
-    class="sticky top-0 z-50 bg-accent py-3 text-center font-display text-base tracking-[0.35em] text-black"
-  >
+  <header class="sticky top-0 z-50 bg-accent py-3 text-center font-display text-base text-black">
     <router-link
       :to="menuTarget"
       class="inline-flex items-center justify-center"

@@ -7,10 +7,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        accent: '#f1e510',
+        accent: '#ffff00',
       },
       fontFamily: {
-        display: ['"Bebas Neue"', '"Arial Narrow"', 'sans-serif'],
+        display: ['"Proxima Nova"', '"Helvetica Neue"', 'Arial', 'sans-serif'],
         body: ['"EB Garamond"', '"Times New Roman"', 'serif'],
       },
       boxShadow: {

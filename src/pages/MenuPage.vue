@@ -4,8 +4,13 @@
     <div
       class="flex min-h-[calc(100vh-48px)] items-center justify-center bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.05),_rgba(0,0,0,0.96)_65%)]"
     >
-      <nav class="space-y-5 text-center font-display text-3xl tracking-[0.2em]">
-        <a class="block transition-colors hover:text-accent" :href="drinksPdf" download="kleinlaut.pdf">
+      <nav class="space-y-5 text-center font-display text-3xl tracking-normal">
+        <a
+          class="block transition-colors hover:text-accent"
+          :href="drinksPdf"
+          target="_blank"
+          rel="noreferrer"
+        >
           DRINKS
         </a>
         <router-link class="block transition-colors hover:text-accent" to="/fotos">FOTOS</router-link>
