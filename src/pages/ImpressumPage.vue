@@ -1,6 +1,6 @@
 <template>
   <section class="min-h-screen bg-black">
-    <TopBar label="ZURUCK" to="/menu" />
+    <TopBar />
     <div
       class="flex min-h-[calc(100vh-48px)] items-center justify-center bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.06),_rgba(0,0,0,0.95)_62%)] px-6 text-center"
     >

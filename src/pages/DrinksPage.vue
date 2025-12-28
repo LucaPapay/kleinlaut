@@ -1,10 +1,10 @@
 <template>
   <section class="min-h-screen">
-    <TopBar label="MENU" to="/menu" />
+    <TopBar />
     <div class="relative min-h-[calc(100vh-48px)]">
       <img
         class="absolute inset-0 h-full w-full object-cover"
-        src="https://images.unsplash.com/photo-1514361892635-6f07bf83b4a6?auto=format&fit=crop&w=900&q=80"
+        :src="heroImage"
         alt="Cocktail in a dimly lit bar"
       />
       <div class="absolute inset-0 bg-black/35"></div>
@@ -12,9 +12,11 @@
       <div
         class="relative flex min-h-[calc(100vh-48px)] flex-col items-center justify-end px-6 pb-16 text-center"
       >
-        <p class="font-display text-3xl tracking-[0.45em] text-accent animate-fade-rise">
-          KLEINLAUT
-        </p>
+        <img
+          class="w-56 max-w-[70%] animate-fade-rise drop-shadow-lg"
+          :src="logoImage"
+          alt="Kleinlaut"
+        />
         <p class="mt-2 font-body text-sm text-accent animate-fade-rise">
           Dienstag bis Samstag<br />18:00 - 02:00
         </p>
@@ -29,4 +31,6 @@
 
 <script setup>
 import TopBar from '../components/TopBar.vue'
+import heroImage from '@/assets/images/hero.jpg'
+import logoImage from '@/assets/images/logo.png'
 </script>

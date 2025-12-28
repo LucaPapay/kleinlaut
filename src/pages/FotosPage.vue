@@ -1,25 +1,18 @@
 <template>
   <section class="min-h-screen bg-black">
-    <TopBar label="ZURUCK" to="/menu" />
-    <div class="flex min-h-[calc(100vh-48px)] flex-col">
-      <div class="relative h-[55vh]">
+    <TopBar />
+    <div
+      class="min-h-[calc(100vh-48px)] bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.05),_rgba(0,0,0,0.96)_65%)] px-0 py-0"
+    >
+      <div class="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 2xl:columns-5 [column-gap:0]">
         <img
-          class="h-full w-full object-cover"
-          src="https://images.unsplash.com/photo-1421622548261-c45bfe178854?auto=format&fit=crop&w=900&q=80"
-          alt="Table setting with glassware"
+          v-for="(src, index) in galleryImages"
+          :key="src"
+          class="mb-0 block h-screen w-full break-inside-avoid object-cover shadow-none sm:mb-0 sm:h-auto sm:shadow-soft-glow"
+          :src="src"
+          :alt="`Gallery image ${index + 1}`"
+          loading="lazy"
         />
-        <div class="absolute inset-0 bg-black/10"></div>
-      </div>
-      <div class="relative flex h-[45vh] items-end bg-black">
-        <img
-          class="absolute inset-0 h-full w-full object-cover"
-          src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=900&q=80"
-          alt="Warm bar lighting"
-        />
-        <div class="absolute inset-0 bg-black/25"></div>
-        <div class="relative p-6">
-          <p class="font-display text-2xl tracking-[0.2em] text-accent">KLEINLAUT</p>
-        </div>
       </div>
     </div>
   </section>
@@ -27,4 +20,13 @@
 
 <script setup>
 import TopBar from '../components/TopBar.vue'
+
+const galleryImages = Object.entries(
+  import.meta.glob('../assets/images/gallery/*.{jpg,JPG,jpeg,JPEG,png,PNG}', {
+    eager: true,
+    import: 'default',
+  })
+)
+  .sort(([first], [second]) => first.localeCompare(second))
+  .map(([, src]) => src)
 </script>
