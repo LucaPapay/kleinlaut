@@ -1,9 +1,7 @@
 <template>
-  <section class="min-h-screen bg-black">
+  <section class="h-[100dvh] overflow-hidden bg-black">
     <TopBar />
-    <div
-      class="flex min-h-[calc(100vh-48px)] flex-col items-center justify-center px-4"
-    >
+    <div class="flex h-[calc(100dvh-48px)] flex-col items-center justify-center px-4">
       <div class="w-full max-w-[300px]">
         <img class="h-auto w-full" :src="raumplanImage" alt="Raumplan" />
       </div>

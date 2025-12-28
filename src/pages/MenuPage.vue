@@ -1,10 +1,10 @@
 <template>
-  <section class="min-h-screen bg-black">
-    <TopBar />
+  <section class="h-[100dvh] overflow-hidden bg-black">
+    <TopBar label="ZURÜCK" />
     <div
-      class="flex min-h-[calc(100vh-48px)] items-center justify-center bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.05),_rgba(0,0,0,0.96)_65%)]"
+      class="flex h-[calc(100dvh-48px)] items-center justify-center bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.05),_rgba(0,0,0,0.96)_65%)]"
     >
-      <nav class="space-y-5 text-center font-display text-3xl tracking-normal">
+      <nav class="space-y-5 text-center font-display text-5xl tracking-normal">
         <a
           class="block transition-colors hover:text-accent"
           :href="drinksPdf"

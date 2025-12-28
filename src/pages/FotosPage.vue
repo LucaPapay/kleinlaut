@@ -4,11 +4,11 @@
     <div
       class="min-h-[calc(100vh-48px)] bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.05),_rgba(0,0,0,0.96)_65%)] px-0 py-0"
     >
-      <div class="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 2xl:columns-5 [column-gap:0]">
+      <div class="grid grid-cols-1 gap-0 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5">
         <img
           v-for="(src, index) in galleryImages"
           :key="src"
-          class="mb-0 block h-screen w-full break-inside-avoid object-cover shadow-none sm:mb-0 sm:h-auto sm:shadow-soft-glow"
+          class="block h-screen w-full object-cover shadow-none sm:h-auto sm:shadow-soft-glow"
           :src="src"
           :alt="`Gallery image ${index + 1}`"
           loading="lazy"
@@ -27,6 +27,20 @@ const galleryImages = Object.entries(
     import: 'default',
   })
 )
-  .sort(([first], [second]) => first.localeCompare(second))
+  .sort(([first], [second]) => {
+    const numberFromPath = (value) => {
+      const match = value.match(/(\d+)(?=\.[^.]+$)/)
+      return match ? Number(match[1]) : Number.POSITIVE_INFINITY
+    }
+
+    const firstNumber = numberFromPath(first)
+    const secondNumber = numberFromPath(second)
+
+    if (firstNumber !== secondNumber) {
+      return firstNumber - secondNumber
+    }
+
+    return first.localeCompare(second)
+  })
   .map(([, src]) => src)
 </script>
