@@ -11,7 +11,7 @@ export default {
       },
       fontFamily: {
         display: ['"Bebas Neue"', '"Arial Narrow"', 'sans-serif'],
-        body: ['"Cormorant Garamond"', '"Times New Roman"', 'serif'],
+        body: ['"EB Garamond"', '"Times New Roman"', 'serif'],
       },
       boxShadow: {
         'soft-glow': '0 12px 40px rgba(0, 0, 0, 0.45)',

@@ -10,8 +10,6 @@
           alt="Cocktail in a dimly lit bar"
         />
       </picture>
-      <div class="absolute inset-0 bg-black/35"></div>
-      <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
       <div class="relative flex min-h-[calc(100vh-48px)] flex-col px-6 text-center">
         <div class="flex flex-1 flex-col items-center justify-center">
           <img
