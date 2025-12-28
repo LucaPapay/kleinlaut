@@ -44,7 +44,7 @@
       </div>
     </div>
     <div class="bg-black">
-      <div class="mx-auto w-full max-w-5xl">
+      <div class="mx-auto w-full">
         <div class="aspect-[3/4] overflow-hidden sm:aspect-video">
           <iframe
             :src="mapSrc"
