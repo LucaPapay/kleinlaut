@@ -11,5 +11,5 @@
 
 <script setup>
 import TopBar from '../components/TopBar.vue'
-import raumplanImage from '@/assets/images/raumplan.png'
+import raumplanImage from '@/assets/images/raumplan.webp'
 </script>

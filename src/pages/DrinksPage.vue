@@ -1,30 +1,30 @@
 <template>
   <section class="relative bg-black pt-12">
     <TopBar />
-    <div class="relative min-h-[calc(100vh-48px)] h-[calc(100svh-48px)] overflow-hidden">
+    <div class="relative h-[100vh] overflow-hidden">
       <picture>
         <source :srcset="heroDesktopImage" media="(min-width: 1024px)" />
         <img
-          class="absolute inset-0 h-full w-full object-cover"
+          class="absolute inset-0 h-[105vh] w-full object-cover"
           :src="heroImage"
           alt="Cocktail in a dimly lit bar"
         />
       </picture>
-      <div class="relative z-10 grid h-full grid-rows-[1fr_auto] px-6 text-center">
+      <div class="relative z-10 grid h-full grid-rows-[1fr_auto] px-6 text-center pb-24 sm:pb-12">
         <div class="flex flex-col items-center justify-center">
           <img
-            class="w-48 max-w-[70%] animate-fade-rise drop-shadow-lg sm:w-56"
+            class="w-48 max-w-[70%] animate-fade-rise drop-shadow-lg sm:w-72"
             :src="logoImage"
             alt="Kleinlaut"
           />
           <p
-            class="mt-4 font-body font-extrabold text-[0.9rem] leading-snug text-accent animate-fade-rise sm:mt-2 sm:text-sm"
+            class="mt-4 font-body font-extrabold text-[0.9rem] leading-snug text-accent animate-fade-rise sm:mt-2 sm:text-lg"
           >
             Dienstag bis Samstag<br />18:00 - 02:00
           </p>
         </div>
         <p
-          class="mb-8 max-w-sm self-center text-center text-[0.9rem] leading-snug text-accent animate-fade-in sm:mb-10 sm:text-base mx-auto"
+          class="mb-16 max-w-md self-center text-center text-[0.9rem] leading-snug text-accent animate-fade-in sm:mb-10 sm:text-lg mx-auto"
         >
           Bei Fragen melde dich gerne per
           <a class="underline underline-offset-2" href="tel:+436766616644">Anruf</a>,
@@ -62,8 +62,8 @@
 
 <script setup>
 import TopBar from '../components/TopBar.vue'
-import heroImage from '@/assets/images/hero.jpg'
-import heroDesktopImage from '@/assets/images/hero_desktop.jpg'
+import heroImage from '@/assets/images/hero.webp'
+import heroDesktopImage from '@/assets/images/hero_desktop.webp'
 import logoImage from '@/assets/images/logo.png'
 
 const mapSrc =
