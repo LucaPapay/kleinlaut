@@ -1,5 +1,5 @@
 <template>
-  <header class="sticky top-0 z-50 bg-accent py-3 text-center font-display text-base text-black">
+  <header :class="barClass">
     <router-link
       :to="menuTarget"
       class="inline-flex items-center justify-center"
@@ -22,5 +22,13 @@ const props = defineProps({
 })
 
 const route = useRoute()
-const menuTarget = computed(() => (route.path === '/menu' ? '/drinks' : '/menu'))
+const isGallery = computed(() => route.path === '/fotos')
+
+const barClass = computed(() => {
+  const positionClass = isGallery.value
+    ? 'fixed top-0 left-0 right-0'
+    : 'sticky top-0'
+  return `${positionClass} z-50 bg-accent py-3 text-center font-display text-base text-black`
+})
+const menuTarget = computed(() => (route.path === '/menu' ? '/' : '/menu'))
 </script>

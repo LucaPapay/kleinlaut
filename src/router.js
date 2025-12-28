@@ -6,8 +6,8 @@ import RaumplanPage from './pages/RaumplanPage.vue'
 import ImpressumPage from './pages/ImpressumPage.vue'
 
 const routes = [
-  { path: '/', redirect: '/drinks' },
-  { path: '/drinks', component: DrinksPage },
+  { path: '/', component: DrinksPage },
+  { path: '/drinks', redirect: '/' },
   { path: '/menu', component: MenuPage },
   { path: '/fotos', component: FotosPage },
   { path: '/raumplan', component: RaumplanPage },

@@ -1,5 +1,5 @@
 <template>
-  <section class="min-h-screen bg-black">
+  <section class="min-h-screen bg-black pt-12">
     <TopBar />
     <div
       class="min-h-[calc(100vh-48px)] bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.05),_rgba(0,0,0,0.96)_65%)] px-0 py-0"
