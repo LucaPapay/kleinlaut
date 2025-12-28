@@ -22,7 +22,7 @@
 import TopBar from '../components/TopBar.vue'
 
 const galleryImages = Object.entries(
-  import.meta.glob('../assets/images/gallery/*.{jpg,JPG,jpeg,JPEG,png,PNG}', {
+  import.meta.glob('../assets/images/gallery/*.{jpg,JPG,jpeg,JPEG,png,PNG,webp}', {
     eager: true,
     import: 'default',
   })

@@ -22,10 +22,10 @@ const props = defineProps({
 })
 
 const route = useRoute()
-const isGallery = computed(() => route.path === '/fotos')
+const isFixed = computed(() => route.path === '/fotos' || route.path === '/')
 
 const barClass = computed(() => {
-  const positionClass = isGallery.value
+  const positionClass = isFixed.value
     ? 'fixed top-0 left-0 right-0'
     : 'sticky top-0'
   return `${positionClass} z-50 bg-accent py-3 text-center font-display text-base text-black`

@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen bg-black text-white">
+  <div class="min-h-screen text-white">
     <router-view />
   </div>
 </template>
@@ -13,7 +13,7 @@ const route = useRoute()
 watch(
   () => route.path,
   (path) => {
-    const allowScroll = path === '/fotos'
+    const allowScroll = path === '/fotos' || path === '/'
     document.body.classList.toggle('allow-scroll', allowScroll)
     document.documentElement.classList.toggle('allow-scroll', allowScroll)
   },
