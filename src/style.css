@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Local fonts: drop files in /public/fonts and define @font-face here. */
+
 @layer base {
   body {
     @apply bg-black text-white font-body;
