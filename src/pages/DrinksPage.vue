@@ -1,8 +1,8 @@
 <template>
   <section class="relative h-[100lvh] min-h-[100vh] overflow-hidden">
     <TopBar />
-    <div class="absolute inset-0 hero-background" aria-hidden="true"></div>
-    <div class="relative h-[calc(100dvh-48px)]">
+    <div class="fixed inset-x-0 top-0 hero-background" aria-hidden="true"></div>
+    <div class="relative h-[calc(100svh-48px)]">
       <div class="relative z-10 grid h-full grid-rows-[1fr_auto] px-6 text-center">
         <div class="flex flex-col items-center justify-center">
           <img
@@ -10,7 +10,7 @@
             :src="logoImage"
             alt="Kleinlaut"
           />
-          <p class="mt-4 font-body text-[0.9rem] leading-snug text-accent animate-fade-rise sm:mt-2 sm:text-sm">
+          <p class="mt-4 font-body font-bold text-[0.9rem] leading-snug text-accent animate-fade-rise sm:mt-2 sm:text-sm">
             Dienstag bis Samstag<br />18:00 - 02:00
           </p>
         </div>

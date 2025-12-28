@@ -7,8 +7,14 @@
       <div class="space-y-1 text-sm text-accent">
         <p class="font-body text-base font-extrabold text-accent">JP Frameworks GmbH</p>
         <p>Loewengasse 28/30, 1030 Wien</p>
-        <p>peter@kleinlaut.wien</p>
-        <p>+43 676 661 66 44</p>
+        <p>
+          <a class="underline underline-offset-2" href="mailto:peter@kleinlaut.wien">
+            peter@kleinlaut.wien
+          </a>
+        </p>
+        <p>
+          <a class="underline underline-offset-2" href="tel:+436766616644">+43 676 661 66 44</a>
+        </p>
         <p>ATU80958368</p>
         <p>FN 617457 a</p>
         <p>Gastronomie Betrieb</p>
