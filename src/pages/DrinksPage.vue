@@ -67,5 +67,5 @@ import heroDesktopImage from '@/assets/images/hero_desktop.webp'
 import logoImage from '@/assets/images/logo.png'
 
 const mapSrc =
-  'https://www.google.com/maps?q=Loewengasse%2028%2F30%201030%20Wien&output=embed'
+  'https://www.google.com/maps?q=kleinlaut&output=embed'
 </script>
