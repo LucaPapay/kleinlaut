@@ -24,7 +24,7 @@
           </p>
         </div>
         <p
-          class="mb-24 max-w-md self-center text-center text-[0.9rem] leading-snug text-accent animate-fade-in sm:mb-10 sm:text-lg mx-auto"
+          class="mb-28 max-w-md self-center text-center text-[0.9rem] leading-snug text-accent animate-fade-in sm:mb-10 sm:text-lg mx-auto"
         >
           Bei Fragen melde dich gerne per
           <a class="underline underline-offset-2" href="tel:+436766616644">Anruf</a>,
@@ -54,7 +54,7 @@
           <img :src="mapMobileImage" alt="Kleinlaut on Google Maps" class="h-auto w-full" />
         </a>
         <div class="hidden sm:block">
-          <div class="aspect-[3/4] overflow-hidden sm:aspect-video">
+          <div class="overflow-hidden aspect-[20/6]">
             <iframe
               :src="mapSrc"
               class="h-full w-full border-0 filter grayscale invert hue-rotate-180 contrast-90"
