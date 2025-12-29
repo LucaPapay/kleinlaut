@@ -2,11 +2,11 @@
   <section class="h-[100dvh] overflow-hidden bg-black">
     <TopBar />
     <div
-      class="flex h-[calc(100dvh-48px)] items-center justify-center bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.06),_rgba(0,0,0,0.95)_62%)] px-6 text-center"
+      class="flex h-[calc(100dvh-48px)] items-center justify-center px-6 text-center"
     >
-      <div class="space-y-1 text-sm text-accent">
+      <div class="space-y-1 text-sm text-gray-500">
         <p class="font-body text-base font-extrabold text-accent">JP Frameworks GmbH</p>
-        <p>Loewengasse 28/30, 1030 Wien</p>
+        <p>Löwengasse 28/30, 1030 Wien</p>
         <p>
           <a class="underline underline-offset-2" href="mailto:peter@kleinlaut.wien">
             peter@kleinlaut.wien
