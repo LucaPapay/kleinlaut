@@ -45,56 +45,38 @@
     </div>
     <div class="bg-black">
       <div class="mx-auto w-full">
-        <div class="aspect-[3/4] overflow-hidden sm:aspect-video">
-          <iframe
-            :src="mapSrc"
-            class="h-full w-full border-0 filter grayscale invert hue-rotate-180 contrast-90"
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            allowfullscreen
-            title="Kleinlaut location on Google Maps"
-          ></iframe>
+        <a
+          class="block sm:hidden"
+          href="https://www.google.com/maps?q=kleinlaut"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img :src="mapMobileImage" alt="Kleinlaut on Google Maps" class="h-auto w-full" />
+        </a>
+        <div class="hidden sm:block">
+          <div class="aspect-[3/4] overflow-hidden sm:aspect-video">
+            <iframe
+              :src="mapSrc"
+              class="h-full w-full border-0 filter grayscale invert hue-rotate-180 contrast-90"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen
+              title="Kleinlaut location on Google Maps"
+            ></iframe>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="bg-black px-4 pb-16 sm:px-8">
-      <div ref="widgetHost" class="mx-auto w-full max-w-5xl"></div>
     </div>
   </section>
 </template>
 
 <script setup>
-import { onMounted, onUnmounted, ref } from 'vue'
 import TopBar from '../components/TopBar.vue'
 import heroImage from '@/assets/images/hero.webp'
 import heroDesktopImage from '@/assets/images/hero_desktop.webp'
 import logoImage from '@/assets/images/logo.png'
+import mapMobileImage from '@/assets/images/map_mobile.webp'
 
 const mapSrc =
   'https://www.google.com/maps?q=kleinlaut&output=embed'
-
-const widgetHost = ref(null)
-let widgetScript = null
-
-onMounted(() => {
-  if (!widgetHost.value) return
-  const script = document.createElement('script')
-  script.src = 'https://reserve.molzait.com/assets/embed.js'
-  script.type = 'text/javascript'
-  script.defer = true
-  script.setAttribute('molzait', '')
-  script.setAttribute('data-restaurant', 'kleinlaut-f7687aa9f1')
-  widgetHost.value.appendChild(script)
-  widgetScript = script
-})
-
-onUnmounted(() => {
-  if (widgetScript?.parentNode) {
-    widgetScript.parentNode.removeChild(widgetScript)
-  }
-  if (widgetHost.value) {
-    widgetHost.value.innerHTML = ''
-  }
-  widgetScript = null
-})
 </script>
