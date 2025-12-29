@@ -1,13 +1,11 @@
 <template>
-  <header :class="barClass">
-    <router-link
-      :to="menuTarget"
-      class="inline-flex items-center justify-center"
-      :aria-label="label"
-    >
-      {{ label }}
-    </router-link>
-  </header>
+  <router-link :to="menuTarget" :aria-label="label" class="block">
+    <header :class="barClass">
+      <span class="inline-flex items-center justify-center">
+        {{ label }}
+      </span>
+    </header>
+  </router-link>
 </template>
 
 <script setup>
