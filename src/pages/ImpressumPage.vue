@@ -4,7 +4,7 @@
     <div
       class="flex h-[calc(100dvh-48px)] items-center justify-center px-6 text-center"
     >
-      <div class="space-y-1 text-sm text-gray-500">
+      <div class="space-y-1 text-sm text-[#808080]">
         <p class="font-body text-base font-extrabold text-accent">JP Frameworks GmbH</p>
         <p>Löwengasse 28/30, 1030 Wien</p>
         <p>

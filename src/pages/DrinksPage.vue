@@ -78,5 +78,5 @@ import logoImage from '@/assets/images/logo.png'
 import mapMobileImage from '@/assets/images/map_mobile.webp'
 
 const mapSrc =
-  'https://www.google.com/maps?q=kleinlaut&output=embed'
+  'https://www.google.com/maps?q=kleinlaut&z=18&output=embed'
 </script>
