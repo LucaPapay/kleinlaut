@@ -2,7 +2,7 @@
   <section class="min-h-screen bg-black pt-12">
     <TopBar />
     <div class="pointer-events-none fixed inset-0 z-40 flex items-center justify-center sm:hidden">
-      <span class="text-[0.9rem] font-extrabold italic text-accent text-center">Die bunte, <br>Bar im Herzen<br>Wiens <3</span>
+      <span class="text-[0.9rem] font-extrabold italic text-accent text-center">Die bunte <br>Bar im Herzen<br>Wiens <3</span>
     </div>
     <div
       class="min-h-[calc(100vh-48px)] bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.05),_rgba(0,0,0,0.96)_65%)] px-0 py-0"
