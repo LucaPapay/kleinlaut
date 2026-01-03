@@ -24,7 +24,7 @@
           </p>
         </div>
         <p
-          class="mb-28 max-w-md self-center text-center text-[0.9rem] leading-snug text-accent animate-fade-in sm:mb-10 sm:text-lg mx-auto"
+          class="mb-24 max-w-md self-center text-center text-[0.9rem] leading-snug text-accent animate-fade-in sm:mb-10 sm:text-lg mx-auto"
         >
           Bei Fragen melde dich gerne per
           <a class="underline underline-offset-2" href="tel:+436766616644">Anruf</a>,
