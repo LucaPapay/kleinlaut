@@ -8,12 +8,12 @@
         <p class="font-body text-base font-extrabold text-accent">JP Frameworks GmbH</p>
         <p>Löwengasse 28/30, 1030 Wien</p>
         <p>
-          <a class="underline underline-offset-2" href="mailto:peter@kleinlaut.wien">
-            peter@kleinlaut.wien
+          <a class="underline underline-offset-2" href="mailto:hallo@kleinlaut.wien">
+            hallo@kleinlaut.wien
           </a>
         </p>
         <p>
-          <a class="underline underline-offset-2" href="tel:+436766616644">+43 676 661 66 44</a>
+          <a class="underline underline-offset-2" href="tel:+4366499224120">+43 664 99224120</a>
         </p>
         <p>ATU80958368</p>
         <p>FN 617457 a</p>

@@ -27,8 +27,7 @@
           class="mb-24 max-w-md self-center text-center text-[0.9rem] leading-snug text-accent animate-fade-in sm:mb-10 sm:text-lg mx-auto"
         >
           Bei Fragen melde dich gerne per
-          <a class="underline underline-offset-2" href="tel:+436766616644">Anruf</a>,
-          <a class="underline underline-offset-2" href="https://wa.me/436766616644">WhatsApp</a>,
+          <a class="underline underline-offset-2" href="tel:+4366499224120">Anruf</a>,
           slide <br>in unsere
           <a
             class="underline underline-offset-2"
@@ -39,7 +38,7 @@
             DMs
           </a>
           oder schreibe uns eine
-          <a class="underline underline-offset-2" href="mailto:peter@kleinlaut.wien">Mail</a> :)
+          <a class="underline underline-offset-2" href="mailto:hallo@kleinlaut.wien">Mail</a> :)
         </p>
       </div>
     </div>
