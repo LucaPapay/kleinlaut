@@ -28,7 +28,7 @@
         >
           Bei Fragen melde dich gerne per
           <a class="underline underline-offset-2" href="tel:+4366499224120">Anruf</a>,
-          slide <br>in unsere
+          slide in unsere
           <a
             class="underline underline-offset-2"
             href="https://www.instagram.com/kleinlaut1070/"
